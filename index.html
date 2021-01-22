@@ -23,6 +23,14 @@
 
       gtag("config", "UA-101763124-3");
     </script>
+    <style>
+      .bookmarklet:not(:hover) span {
+        display: none;
+      }
+      .bookmarklet:not(:hover):before {
+        content: "bookmarklet";
+      }
+    </style>
   </head>
   <body>
     <h1 style="font-size: 1.5rem; font-weight: normal">
@@ -31,17 +39,19 @@
     </h1>
 
     <h2 style="font-size: 1.2rem; font-weight: normal">
-      Hint: Create a bookmark to
-      <code
+      Hint: Drag this
+      <a
+        class="bookmarklet"
         style="
           background-color: #1b1f230d;
           padding: 0.2rem 0.4rem;
           border-radius: 6px;
-          user-select: all;
         "
-        >https://tabspl.it</code
+        onclick=""
+        href="https://tabspl.it"
+        ><span>TabSplit</span></a
       >
-      for quick access.
+      to your bookmark bar for quick access.
     </h2>
 
     <img
